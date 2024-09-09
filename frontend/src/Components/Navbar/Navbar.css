@@ -1,0 +1,89 @@
+.nav-container {
+    background: linear-gradient(to top, #909078, #53554b);
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid #696752 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.siteLogo {
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    float: left;
+    height: auto;
+    max-height: 50px;
+}
+
+.navbarLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.siteLogo-Link {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.siteLogo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 50px;
+}
+  
+.left-nav-items {
+    display: flex;
+    float: right;
+    height: 50px;
+    margin: 0;
+}
+
+.right-nav-items {
+    display: flex;
+    float: left;
+    height: 50px;
+    margin: 0;
+}
+
+.links {
+    margin: auto;
+    padding: auto;
+    text-decoration: none;
+}
+
+.nav-link {
+    width: auto;
+    min-width: 85px;
+    height: auto;
+    min-height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-link:hover {
+    background: linear-gradient(to bottom, #53554b, #696752);
+    transition: 0.2s;
+    cursor: pointer;
+    color: whitesmoke;
+}

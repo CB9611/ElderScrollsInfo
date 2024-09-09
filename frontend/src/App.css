@@ -1,16 +1,13 @@
-.App {
-  background: linear-gradient(to top, black, rgb(50, 50, 50));
-  height: 100vh;
-  justify-content: center;
-  width: 100%;
-
-}
-
 .app-body {
+  background-image: url('./Components//Images/backgroundimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   justify-content: center;
-}
-
-.header {
-  color: white;
-  font-size: 25px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  min-height: 75vh;
+  height: auto;
+  max-width: 100vw;
 }

@@ -1,0 +1,13 @@
+.home-container {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .home-body {
+    justify-content: center;
+  }
+  
+  .home-header {
+    color: white;
+    font-size: 25px;
+  }
