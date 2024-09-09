@@ -1,6 +1,15 @@
 .home-container {
-    justify-content: center;
-    width: 100%;
+  background-image: url('../../Images/backgroundimg-home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  min-height: 75vh;
+  height: auto;
+  max-width: 100vw;
   }
   
   .home-body {
