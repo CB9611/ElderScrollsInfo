@@ -1,0 +1,35 @@
+.nav-container {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin: 0px;
+    border-bottom: solid red 5px;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: left;
+}
+
+.nav-items {
+    background-color: black;
+    margin: 0px;
+}
+
+.nav-link {
+    background-color: black;
+    border-radius: 0px;
+    width: 100px;
+    height: 50px;
+    list-style: none;
+    border: none;
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: red;
+    transition: 0.2s;
+    cursor: pointer;
+    color: whitesmoke;
+}

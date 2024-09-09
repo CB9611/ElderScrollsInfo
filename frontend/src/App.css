@@ -1,0 +1,16 @@
+.App {
+  background: linear-gradient(to top, black, rgb(50, 50, 50));
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.app-body {
+  justify-content: center;
+}
+
+.header {
+  color: white;
+  font-size: 25px;
+}
