@@ -10,4 +10,14 @@
 .footer {
     display: flex;
     justify-content: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.paragraph-footer {
+    color: black;
+    font-weight: bolder;
+    width: 60%;
 }

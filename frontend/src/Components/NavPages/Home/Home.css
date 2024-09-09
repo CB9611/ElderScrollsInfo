@@ -1,22 +1,25 @@
 .home-container {
-  background-image: url('../../Images/backgroundimg-home.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  min-height: 75vh;
-  height: auto;
-  max-width: 100vw;
-  }
-  
-  .home-body {
+    background-image: url('../../Images/backgroundimg-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     justify-content: center;
-  }
+    align-items: center;
+    text-align: center;
+    display: flex;
+    min-height: 75vh;
+    height: auto;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
   
-  .home-header {
+.home-body {
+    justify-content: center;
+}
+  
+.home-header {
     color: white;
     font-size: 25px;
-  }
+}
