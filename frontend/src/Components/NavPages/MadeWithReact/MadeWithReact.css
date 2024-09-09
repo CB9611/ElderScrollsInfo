@@ -1,0 +1,13 @@
+.react-container {
+    justify-content: center;
+    width: 100%;
+}
+  
+.react-body {
+    justify-content: center;
+}
+  
+.react-header {
+    color: white;
+    font-size: 25px;
+}

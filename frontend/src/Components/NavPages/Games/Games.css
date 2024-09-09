@@ -1,0 +1,13 @@
+.games-container {
+    justify-content: center;
+    width: 100%;
+}
+  
+.games-body {
+    justify-content: center;
+}
+  
+.games-header {
+    color: white;
+    font-size: 25px;
+}

@@ -1,0 +1,13 @@
+.about-container {
+    justify-content: center;
+    width: 100%;
+}
+  
+.about-body {
+    justify-content: center;
+}
+  
+.about-header {
+    color: white;
+    font-size: 25px;
+}
