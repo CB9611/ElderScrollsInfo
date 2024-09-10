@@ -14,6 +14,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.home-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-left: #696752 5px solid;
+    border-right: #696752 5px solid;
+    border-radius: 10px;
+    min-height: 300px;
+    height: auto;
+    min-width: 600px;
+    width: auto;
+    padding: 15px;
+}
   
 .home-body {
     justify-content: center;
