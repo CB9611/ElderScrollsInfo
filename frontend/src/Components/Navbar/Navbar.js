@@ -31,8 +31,12 @@ function Navbar() {
                         </Link>
                     </div>
                     <div className="nav-items">
-                        <Link className="links" to="/MadeWithReact">
-                            <div className="nav-link">Made with React!</div>
+                        <Link 
+                            className="links" 
+                            to="https://react.dev/"
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                                <div className="nav-link">Made with React!</div>
                         </Link>
                     </div>
                 </div>

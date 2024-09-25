@@ -12,12 +12,64 @@
     justify-content: left;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
-.paragraph-footer {
+.footer-left {
     color: black;
     font-weight: bolder;
-    width: 60%;
+    width: auto;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.footer-divider {
+    height: 300px;
+    width: 5px;
+    background-color: #696752;
+}
+
+.footer-links {
+    color: black;
+    font-weight: bolder;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.signup-text {
+    font-weight: bolder;
+}
+
+.footer-signup {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.signup-text {
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: none;
+    margin-right: 10px;
+}
+
+.signup-submit {
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: none;
+    background-color: #696752;
+}
+
+.signup-submit:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.2s;
 }
