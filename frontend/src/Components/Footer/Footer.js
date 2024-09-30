@@ -7,33 +7,33 @@ function Footer() {
         <div className="footer-container">
             <body className="footer">
                 <div className="footer-left">
-                    <ul>
-                        <Link className="footer-links-list" exact to="/">
-                            <div className="footer-link-item">Home</div>
+                    <ul className="footer-list">
+                        <Link className="footer-links" exact to="/">
+                            <li className="footer-list-text">Home</li>
                         </Link>
-                        <Link className="footer-links-list" to="/Games">
-                            <div className="footer-link-item">Games</div>
+                        <Link className="footer-links" to="/Games">
+                            <li className="footer-list-text">Games</li>
                         </Link>
-                        <Link className="footer-links-list" to="/About">
-                            <div className="footer-link-item">About</div>
+                        <Link className="footer-links" to="/About">
+                            <li className="footer-list-text">About</li>
                         </Link>
                         <Link 
-                            className="footer-links-list" 
+                            className="footer-links" 
                             to="https://react.dev/"
                             target="_blank" 
                             rel="noopener noreferrer">
-                                <div className="footer-link-item">Made with React!</div>
+                            <li className="footer-list-text">Made with React!</li>
                         </Link>
                     </ul>
                 </div>
                 <div className="footer-divider" />
-                <div className="footer-links">
+                <div className="footer-middle">
                     <Link 
-                        className="external-links" 
+                        className="footer-links" 
                         to="https://bethesda.net/"
                         target="_blank" 
                         rel="noopener noreferrer">
-                            Bethesda's Website
+                        <li className="footer-list-text">Bethesda's Website</li>
                     </Link>
                 </div>
                 <div className="footer-divider" />

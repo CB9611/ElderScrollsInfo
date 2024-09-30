@@ -10,33 +10,24 @@
 .footer {
     display: flex;
     justify-content: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 0px;
-    padding-bottom: 0px;
 }
 
 .footer-left {
     color: black;
     font-weight: bolder;
     width: auto;
-    margin-right: 30px;
-    margin-top: 15px;
+}
+
+.footer-middle {
+    color: black;
+    font-weight: bolder;
+    width: auto;
 }
 
 .footer-divider {
     height: 300px;
     width: 5px;
     background-color: #696752;
-}
-
-.footer-links {
-    color: black;
-    font-weight: bolder;
-    width: auto;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 15px;
 }
 
 .signup-text {
@@ -72,4 +63,31 @@
     background-color: black;
     color: white;
     transition-duration: 0.2s;
+}
+
+.footer-list {
+    color: black;
+    text-decoration: none;
+    padding: auto;
+    margin: auto;
+}
+
+.footer-links {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-links:hover .footer-list-text:hover {
+    color: white;
+    background-color: #696752;
+    transition: 0.3s;
+}
+
+.footer-list-text {
+    width: auto;
+    min-width: 250px;
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
 }
