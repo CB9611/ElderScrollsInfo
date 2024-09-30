@@ -28,6 +28,10 @@ function Footer() {
                 </div>
                 <div className="footer-divider" />
                 <div className="footer-middle">
+                    PLACEHOLDER
+                </div>
+                <div className="footer-divider" />
+                <div className="footer-right">
                     <Link 
                         className="footer-links" 
                         to="https://bethesda.net/"
@@ -36,13 +40,13 @@ function Footer() {
                         <li className="footer-list-text">Bethesda's Website</li>
                     </Link>
                 </div>
-                <div className="footer-divider" />
-                <div className="footer-signup">
-                    <form className="signup-form">
-                        <input className="signup-text" type="text" placeholder="Sign up today!" />
-                        <button className="signup-submit" type="submit">Submit</button>
-                    </form>
-                </div>
+            </body>
+            <body className="footer-signup-banner">
+                <form className="signup-form">
+                    <input className="signup-text" type="text" placeholder="Sign up today!" />
+                    <button className="signup-submit" type="submit"><text className="submit-text">Submit</text></button>
+                </form>
+                <text className="copyright-text">2024 CB9611©</text>
             </body>
         </div>
     )

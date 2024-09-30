@@ -7,21 +7,34 @@
     border-top: solid #696752 5px;
 }
 
+.footer-signup-banner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    border-top: solid #696752 5px;
+}
+
 .footer {
     display: flex;
     justify-content: left;
 }
 
-.footer-left {
+.footer-left .footer-right {
     color: black;
     font-weight: bolder;
-    width: auto;
+    width: 30%;
 }
 
 .footer-middle {
     color: black;
     font-weight: bolder;
-    width: auto;
+    width: 40%;
 }
 
 .footer-divider {
@@ -30,37 +43,41 @@
     background-color: #696752;
 }
 
+.signup-form {
+    margin-right: auto;
+    height: 100%;
+    flex: 1;
+}
+
 .signup-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: none;
+    height: 40px;
+    width: 300px;
     font-weight: bolder;
 }
 
-.footer-signup {
-    margin-top: 15px;
-    margin-left: 30px;
-}
-
-.signup-text {
-    border-radius: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-style: none;
-    margin-right: 10px;
+.submit-text {
+    height: 100%;
+    flex: 1;
 }
 
 .signup-submit {
-    border-radius: 15px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-style: none;
+    height: 40px;
     background-color: #696752;
+    font-weight: bolder;
+    width: 100px;
 }
 
 .signup-submit:hover {
-    background-color: black;
+    cursor: pointer;
+    background: linear-gradient(to top, #909078, #696752);
     color: white;
     transition-duration: 0.2s;
 }
@@ -90,4 +107,9 @@
     height: 30px;
     padding-left: 30px;
     padding-top: 10px;
+}
+
+.copyright-text {
+    color: grey;
+    margin-left: auto;
 }

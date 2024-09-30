@@ -12,3 +12,9 @@
   max-width: 100%;
   font-size: 50px;
 }
+
+.banner-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
