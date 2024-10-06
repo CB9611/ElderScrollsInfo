@@ -4,6 +4,7 @@
     min-height: 300px;
     height: auto;
     margin: 0;
+    border-top: solid black 5px;
 }
 
 .footer-banner {
@@ -57,7 +58,7 @@
 }
 
 .signup-text {
-    background: linear-gradient(to top, black, #202020);
+    background: linear-gradient(to top, #202020, #202020);
     color: whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
@@ -83,7 +84,7 @@
     padding-bottom: 5px;
     border-style: none;
     height: 40px;
-    background: linear-gradient(to bottom, black, #202020);
+    background: linear-gradient(to bottom, black, black);
     min-width: 100%;
     margin: 0;
     color: whitesmoke;
@@ -93,7 +94,7 @@
     cursor: pointer;
     color: white;
     transition-duration: 0.5s;
-    background: linear-gradient(to bottom, black, black);
+    background: linear-gradient(to top, black, #202020);
 }
 
 .footer-list {
