@@ -1,8 +1,5 @@
 .about-container {
-    background-image: url('../../Images/backgroundimg-about.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: black;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -13,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-bottom: 100px;
 }
   
 .about-body {
@@ -22,4 +20,16 @@
 .about-header {
     color: white;
     font-size: 25px;
+    margin-top: 100px;
+}
+
+.about-paragraphs {
+    font-size: 20px;
+    padding: 30px;
+    text-align: left;
+    line-height: 2;
+    color: whitesmoke;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-indent: 10%;
 }

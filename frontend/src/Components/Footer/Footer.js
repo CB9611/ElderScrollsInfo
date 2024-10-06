@@ -39,7 +39,21 @@ function Footer() {
                         to="https://react.dev/"
                         target="_blank" 
                         rel="noopener noreferrer">
-                        <li className="footer-list-text">Made with React!</li>
+                        <li className="footer-list-text">Made with React</li>
+                    </Link>
+                    <Link 
+                        className="footer-links" 
+                        to="https://chatgpt.com/"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <li className="footer-list-text">Descriptions from ChatGPT</li>
+                    </Link>
+                    <Link 
+                        className="footer-links" 
+                        to="https://en.wikipedia.org/wiki/The_Elder_Scrolls"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <li className="footer-list-text">Pictures & Info from Wikipedia</li>
                     </Link>
                 </div>
             </body>

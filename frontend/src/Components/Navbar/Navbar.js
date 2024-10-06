@@ -33,10 +33,10 @@ function Navbar() {
                     <div className="nav-items">
                         <Link 
                             className="links" 
-                            to="https://react.dev/"
+                            to="https://bethesda.net/"
                             target="_blank" 
                             rel="noopener noreferrer">
-                                <div className="nav-link">Made with React!</div>
+                            <div className="nav-link">Bethesda</div>
                         </Link>
                     </div>
                 </div>
