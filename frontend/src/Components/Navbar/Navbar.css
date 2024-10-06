@@ -1,11 +1,11 @@
 .nav-container {
-    background: linear-gradient(to top, #909078, #53554b);
+    background: linear-gradient(to top, black, #202020);
     width: 100%;
     height: auto;
     margin: 0px;
     display: flex;
     justify-content: center;
-    border-bottom: solid #696752 5px;
+    border-bottom: solid #202020 5px;
 }
 
 .navbar {
@@ -28,6 +28,8 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .siteLogo-Link {
@@ -69,21 +71,21 @@
 
 .nav-link {
     width: auto;
-    min-width: 85px;
+    min-width: 12vw;
     height: auto;
     min-height: 50px;
-    color: black;
+    color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bolder;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .nav-link:hover {
-    background: linear-gradient(to bottom, #53554b, #696752);
-    transition: 0.2s;
+    background-color: rgb(100, 100, 100);
+    transition: 0.5s;
     cursor: pointer;
-    color: whitesmoke;
+    color: black;
+    padding-top: 15%;
 }

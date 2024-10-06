@@ -5,6 +5,12 @@ import './Footer.css';
 function Footer() {
     return (
         <div className="footer-container">
+            <body className="footer-signup-banner">
+                <form className="signup-form">
+                    <input className="signup-text" type="text" placeholder="To sign up, type your email here" />
+                    <button className="signup-submit" type="submit"><text className="submit-text">Submit</text></button>
+                </form>
+            </body>
             <body className="footer">
                 <div className="footer-left">
                     <ul className="footer-list">
@@ -18,10 +24,6 @@ function Footer() {
                             <li className="footer-list-text">About</li>
                         </Link>
                     </ul>
-                </div>
-                <div className="footer-divider" />
-                <div className="footer-middle">
-                    PLACEHOLDER
                 </div>
                 <div className="footer-divider" />
                 <div className="footer-right">
@@ -41,11 +43,7 @@ function Footer() {
                     </Link>
                 </div>
             </body>
-            <body className="footer-signup-banner">
-                <form className="signup-form">
-                    <input className="signup-text" type="text" placeholder="Sign up today!" />
-                    <button className="signup-submit" type="submit"><text className="submit-text">Submit</text></button>
-                </form>
+            <body className="footer-banner">
                 <text className="copyright-text">2024 CB9611©</text>
             </body>
         </div>

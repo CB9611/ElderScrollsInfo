@@ -16,22 +16,21 @@
 }
 
 .css-line {
-    border-top: 5px #696752 solid;
+    border-top: 5px #202020 solid;
     width: 100%;
     margin: 20px 0;
 }
 
 .game-title {
-    color: #909078;
+    color: whitesmoke;
     font-size: 30px;
     font-weight: bolder;
 }
 
 .games-box {
-    background-color: rgba(0, 0, 0, 0.75);
-    border-left: #696752 5px solid;
-    border-right: #696752 5px solid;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-left: #202020 5px solid;
+    border-right: #202020 5px solid;
     min-height: 300px;
     width: auto;
     padding: 15px;
@@ -61,7 +60,7 @@
 }
   
 .games-header {
-    color: #909078;
+    color: whitesmoke;
     font-size: 25px;
     margin-bottom: 15px;
     text-align: center;
@@ -76,8 +75,8 @@
 
 .description {
     flex: 1;
-    color: white;
+    color: whitesmoke;
     text-align: left;
     width: 100%;
-    font-weight: bolder;
+    line-height: 2;
 }

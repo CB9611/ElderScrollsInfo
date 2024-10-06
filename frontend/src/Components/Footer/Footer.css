@@ -1,43 +1,53 @@
 .footer-container {
-    background: linear-gradient(to bottom, #909078, #53554b);
+    background: linear-gradient(to top, black, #202020);
     width: 100%;
     min-height: 300px;
     height: auto;
-    margin: 0px;
-    border-top: solid #696752 5px;
+    margin: 0;
 }
 
-.footer-signup-banner {
+.footer-banner {
     position: relative;
     display: flex;
     width: 100%;
     height: auto;
     background-color: black;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
     align-items: center;
-    border-top: solid #696752 5px;
+    border-top: solid #202020 5px;
+}
+
+.footer-signup-banner {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
 }
 
 .footer {
+    border-top: solid black 5px;
     display: flex;
     justify-content: left;
 }
 
-.footer-left .footer-right {
+.footer-left {
     color: black;
-    width: 30%;
+    min-width: 49.875%;
 }
 
-.footer-middle {
+.footer-right {
     color: black;
-    width: 100%;
+    min-width: 49.875%;
 }
 
 .footer-divider {
     height: 300px;
-    width: 5px;
-    background-color: #696752;
+    width: 0.25%;
+    background: linear-gradient(to bottom, black, #202020);
 }
 
 .signup-form {
@@ -47,12 +57,18 @@
 }
 
 .signup-text {
+    background: linear-gradient(to top, black, #202020);
+    color: whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
     border-style: none;
     height: 40px;
-    width: 300px;
-    font-weight: bolder;
+    min-width: 100%;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .submit-text {
@@ -67,16 +83,17 @@
     padding-bottom: 5px;
     border-style: none;
     height: 40px;
-    background-color: #696752;
-    font-weight: bolder;
-    width: 100px;
+    background: linear-gradient(to bottom, black, #202020);
+    min-width: 100%;
+    margin: 0;
+    color: whitesmoke;
 }
 
 .signup-submit:hover {
     cursor: pointer;
-    background: linear-gradient(to top, #909078, #696752);
     color: white;
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
+    background: linear-gradient(to bottom, black, black);
 }
 
 .footer-list {
@@ -87,15 +104,20 @@
 }
 
 .footer-links {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     list-style: none;
 }
 
 .footer-links:hover .footer-list-text:hover {
-    color: white;
-    background-color: #696752;
+    color: black;
+    background-color: rgb(100, 100, 100);
     transition: 0.3s;
+}
+
+.footer-list-text:hover {
+    padding-left: 50px;
+    transition: 0.5s;
 }
 
 .footer-list-text {
@@ -110,4 +132,6 @@
     color: grey;
     margin-left: auto;
     margin-right: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
