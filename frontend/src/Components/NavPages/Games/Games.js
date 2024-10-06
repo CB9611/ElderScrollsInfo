@@ -17,41 +17,43 @@ import SkyrimDesc from './GameDesc/SkyrimDesc.jsx';
 function Games() {
   return (
     <div className="games-container">
-      <div className="games-box">
+      <div className="games-arena">
+        <img className="games-image" src={ Arena } alt="Skyrim Image" />
         <body className="games-body">
-          <h1 className="games-header">Elder Scrolls Titles</h1>
-          <ul className="game-cover-list">
-            <div className="css-line" />
-            <div className="game-title">The Elder Scrolls I: Arena</div>
-            <li className="list-items">
-              <div className="cover"><img src={ Arena } alt="Arena Game Cover" /></div>
-              <div className="description"><ArenaDesc /></div>
-            </li>
-            <div className="css-line" />
-            <div className="game-title">The Elder Scrolls II: Daggerfall</div>
-            <li className="list-items">
-              <div className="cover"><img src={ Daggerfall } alt="Daggerfall Game Cover" /></div>
-              <div className="description"><DaggerfallDesc /></div>
-            </li>
-            <div className="css-line" />
-            <div className="game-title">The Elder Scrolls III: Morrowind</div>
-            <li className="list-items">
-              <div className="cover"><img src={ Morrowind } alt="Morrowind Game Cover" /></div>
-              <div className="description"><MorrowindDesc /></div>
-            </li>
-            <div className="css-line" />
-            <div className="game-title">The Elder Scrolls IV: Oblivion</div>
-            <li className="list-items">
-              <div className="cover"><img src={ Oblivion } alt="Oblivion Game Cover" /></div>
-              <div className="description"><OblivionDesc /></div>
-            </li>
-            <div className="css-line" />
-            <div className="game-title">The Elder Scrolls V: Skyrim</div>
-            <li className="list-items">
-              <div className="cover"><img src={ Skyrim } alt="Skyrim Game Cover" /></div>
-              <div className="description"><SkyrimDesc /></div>
-            </li>
-          </ul>
+          <h1 className="games-header">The Elder Scrolls I: Arena</h1>
+          <ArenaDesc />
+        </body>
+      </div>
+      <div className="games-divider" />
+      <div className="games-daggerfall">
+        <body className="games-body">
+          <h1 className="games-header">The Elder Scrolls II: Daggerfall</h1>
+          <DaggerfallDesc />
+        </body>
+        <img className="games-image" src={ Daggerfall } alt="Skyrim Image" />
+      </div>
+      <div className="games-divider" />
+      <div className="games-morrowind">
+        <img className="games-image" src={ Morrowind } alt="Skyrim Image" />
+        <body className="games-body">
+          <h1 className="games-header">The Elder Scrolls III: Morrowind</h1>
+          <MorrowindDesc />
+        </body>
+      </div>
+      <div className="games-divider" />
+      <div className="games-oblivion">
+        <body className="games-body">
+          <h1 className="games-header">The Elder Scrolls IV: Oblivion</h1>
+          <OblivionDesc />
+        </body>
+        <img className="games-image" src={ Oblivion } alt="Skyrim Image" />
+      </div>
+      <div className="games-divider" />
+      <div className="games-skyrim">
+        <img className="games-image" src={ Skyrim } alt="Skyrim Image" />
+        <body className="games-body">
+          <h1 className="games-header">The Elder Scrolls V: Skyrim</h1>
+          <SkyrimDesc />
         </body>
       </div>
     </div>
