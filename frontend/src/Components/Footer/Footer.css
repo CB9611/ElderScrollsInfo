@@ -16,7 +16,6 @@
     justify-content: center;
     margin: 0 auto;
     align-items: center;
-    text-align: center;
     border-top: solid #696752 5px;
 }
 
@@ -27,14 +26,12 @@
 
 .footer-left .footer-right {
     color: black;
-    font-weight: bolder;
     width: 30%;
 }
 
 .footer-middle {
     color: black;
-    font-weight: bolder;
-    width: 40%;
+    width: 100%;
 }
 
 .footer-divider {
@@ -112,4 +109,5 @@
 .copyright-text {
     color: grey;
     margin-left: auto;
+    margin-right: 2%;
 }

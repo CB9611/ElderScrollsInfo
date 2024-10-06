@@ -17,13 +17,6 @@ function Footer() {
                         <Link className="footer-links" to="/About">
                             <li className="footer-list-text">About</li>
                         </Link>
-                        <Link 
-                            className="footer-links" 
-                            to="https://react.dev/"
-                            target="_blank" 
-                            rel="noopener noreferrer">
-                            <li className="footer-list-text">Made with React!</li>
-                        </Link>
                     </ul>
                 </div>
                 <div className="footer-divider" />
@@ -38,6 +31,13 @@ function Footer() {
                         target="_blank" 
                         rel="noopener noreferrer">
                         <li className="footer-list-text">Bethesda's Website</li>
+                    </Link>
+                    <Link 
+                        className="footer-links" 
+                        to="https://react.dev/"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <li className="footer-list-text">Made with React!</li>
                     </Link>
                 </div>
             </body>
