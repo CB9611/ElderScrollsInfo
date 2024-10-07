@@ -21,7 +21,7 @@ function Navbar() {
                 </div>
                 <div className="navbarLogo">
                     <Link className="siteLogo-Link" title="You are Dovah" exact to="/">
-                        <img className="siteLogo-img" src={ siteLogo }></img>
+                        <img className="siteLogo-img" src={ siteLogo } alt=""></img>
                     </Link>
                 </div>
                 <div className="right-nav-items">

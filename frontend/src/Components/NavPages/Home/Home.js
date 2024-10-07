@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="home-container">
       <div className="home-top">
-        <img className="home-image" src={HomeImage1} alt="Skyrim Image" />
+        <img className="home-image" src={HomeImage1} alt="Skyrim" />
         <body className="home-body">
           <h1 className="home-header">The Elder Scrolls V: Skyrim</h1>
           <HomeParagraph1 />
@@ -20,10 +20,10 @@ function Home() {
         <body className="home-body">
           <HomeParagraph2 />
         </body>
-        <img className="home-image" src={HomeImage2} alt="Skyrim Image" />
+        <img className="home-image" src={HomeImage2} alt="Skyrim" />
       </div>
       <div className="home-bottom">
-        <img className="home-image" src={HomeImage3} alt="Skyrim Image" />
+        <img className="home-image" src={HomeImage3} alt="Skyrim" />
         <body className="home-body">
           <HomeParagraph3 />
         </body>

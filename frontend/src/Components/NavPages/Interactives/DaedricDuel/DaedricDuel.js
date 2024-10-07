@@ -1,6 +1,5 @@
 import './DaedricDuel.css';
 import DaedricDuelDesc from './DaedricDuel-Desc.jsx';
-import { useState } from "react";
 import Board from "./GameLogic/Board.js";
 
 function DaedricDuel() {
