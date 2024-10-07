@@ -15,6 +15,7 @@ import Footer from './Components/Footer/Footer.js';
 import About from './Components/NavPages/About/About.js';
 import Games from './Components/NavPages/Games/Games.js';
 import Home from './Components/NavPages/Home/Home.js';
+import DaedricDuel from './Components/NavPages/Interactives/DaedricDuel/DaedricDuel.js';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/" element={ <Home /> } />
           <Route path="/Games" element={ <Games /> } />
           <Route path="/About" element={ <About /> } />
+          <Route path="/Daedric-Duel" element={ <DaedricDuel /> } />
         </Routes>
       </body>
       <body className="app-footer-container">

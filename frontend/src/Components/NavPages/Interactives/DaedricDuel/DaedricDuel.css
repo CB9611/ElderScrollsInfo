@@ -1,0 +1,55 @@
+.daedricduel-container {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.daedricduel-header {
+    width: auto;
+}
+
+.daedricduel-title {
+    color: white;
+    font-size: 25px;
+}
+
+.daedricduel-body {
+    color: white;
+}
+
+/* /Interactives/DaedricDuel/styles/DaedricDuel.css */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Elder Scrolls Font', serif;
+  }
+  
+  .board-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    color: #fff;
+    font-size: 24px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .daedric-symbol {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
