@@ -26,6 +26,9 @@ function Footer() {
                         <Link className="footer-links" to="/Daedric-Duel">
                             <li className="footer-list-text">Daedric Duel</li>
                         </Link>
+                        <Link className="footer-links" to="/Darkmode-Test">
+                            <li className="footer-list-text">Darkmode-Test</li>
+                        </Link>
                     </ul>
                 </div>
                 <div className="footer-divider" />

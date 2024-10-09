@@ -1,4 +1,6 @@
-import React from 'react';
+import { 
+  React
+} from 'react';
 import {
   Route,
   Routes,
@@ -17,6 +19,9 @@ import Games from './Components/NavPages/Games/Games.js';
 import Home from './Components/NavPages/Home/Home.js';
 import DaedricDuel from './Components/NavPages/Interactives/DaedricDuel/DaedricDuel.js';
 
+// import other
+import Darkmode from './Components/Darkmode/Darkmode.js';
+
 function App() {
   return (
     <div className="App">
@@ -31,6 +36,7 @@ function App() {
           <Route path="/Games" element={ <Games /> } />
           <Route path="/About" element={ <About /> } />
           <Route path="/Daedric-Duel" element={ <DaedricDuel /> } />
+          <Route path="/Darkmode-Test" element={ <Darkmode /> } />
         </Routes>
       </body>
       <body className="app-footer-container">
