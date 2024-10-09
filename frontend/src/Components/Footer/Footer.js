@@ -14,20 +14,11 @@ function Footer() {
             <body className="footer">
                 <div className="footer-left">
                     <ul className="footer-list">
-                        <Link className="footer-links" exact to="/">
-                            <li className="footer-list-text">Home</li>
-                        </Link>
-                        <Link className="footer-links" to="/Games">
-                            <li className="footer-list-text">Games</li>
-                        </Link>
-                        <Link className="footer-links" to="/About">
-                            <li className="footer-list-text">About</li>
-                        </Link>
-                        <Link className="footer-links" to="/Daedric-Duel">
-                            <li className="footer-list-text">Daedric Duel</li>
-                        </Link>
                         <Link className="footer-links" to="/Darkmode-Test">
-                            <li className="footer-list-text">Darkmode-Test</li>
+                            <li className="footer-list-text">Darkmode Test</li>
+                        </Link>
+                        <Link className="footer-links" to="/UseState-Test">
+                            <li className="footer-list-text">useState Test</li>
                         </Link>
                     </ul>
                 </div>

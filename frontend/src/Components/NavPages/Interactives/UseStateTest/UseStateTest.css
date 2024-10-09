@@ -1,0 +1,67 @@
+.short-module {
+    background-color: whitesmoke;
+    color: black;
+    width: 400px;
+    height: 100%;
+    border-radius: 15px;
+    transition: 1s ease;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.tall-module {
+    background-image: url('../../../Images/backgroundimg-home.jpg');
+    background-repeat: no-repeat;
+    color: black;
+    width: 1500px;
+    height: 100%;
+    border-radius: 100px;
+    transition: 1s ease;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: auto;
+    padding-top: 50px;
+    padding-bottom: 1250px;
+}
+
+.useStateTest-test {
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.useStateTest-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.useStateTest-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: none;
+    height: 40px;
+    background-color: grey;
+    width: 150px;
+    border-radius: 50px;
+    margin: 0;
+    color: whitesmoke;
+}
+
+.useStateTest-button:hover {
+    cursor: pointer;
+    background-color: rgb(100, 100, 100);
+}
