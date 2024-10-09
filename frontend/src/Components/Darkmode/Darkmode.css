@@ -34,12 +34,12 @@
     align-items: center;
 }
 
-h1 {
+.darkmode-title {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-button {
+.darkmode-button {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
@@ -53,7 +53,7 @@ button {
     color: whitesmoke;
 }
 
-button:hover {
+.darkmode-button:hover {
     cursor: pointer;
     background-color: rgb(100, 100, 100);
 }

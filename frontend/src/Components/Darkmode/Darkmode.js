@@ -13,8 +13,8 @@ const DarkMode = () => {
     return (
         <div className="darkmode-test">
             <div className={darkmode ? "dark-mode" : "light-mode"}>
-                <h1>Darkmode Test</h1>
-                <button onClick={ toggle }>
+                <h1 className="darkmode-title">Darkmode Test</h1>
+                <button className="darkmode-button" onClick={ toggle }>
                     {darkmode ? 'Light' : 'Dark'}
                 </button>
             </div>
