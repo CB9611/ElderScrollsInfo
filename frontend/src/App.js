@@ -18,8 +18,6 @@ import About from './Components/NavPages/About/About.js';
 import Games from './Components/NavPages/Games/Games.js';
 import Home from './Components/NavPages/Home/Home.js';
 import DaedricDuel from './Components/NavPages/Interactives/DaedricDuel/DaedricDuel.js';
-
-// import other
 import Darkmode from './Components/Darkmode/Darkmode.js';
 
 function App() {
