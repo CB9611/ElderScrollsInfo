@@ -3,7 +3,6 @@ import {
     useState 
 } from 'react';
 
-import TestImage from '../../../Images/Skyrim/skyrim3.jpg';
 import "./UseStateTest.css";
 
 const UseStateTest = () => {
