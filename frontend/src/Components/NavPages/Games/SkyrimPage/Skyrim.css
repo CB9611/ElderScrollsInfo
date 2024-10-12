@@ -1,0 +1,49 @@
+.skyrim-container {
+    height: auto;
+    width: 100vw;
+}
+
+.skyrim-top {
+    display: flex;
+    min-height: 50vh;
+}
+
+.skyrim-mid {
+    display: flex;
+    min-height: 50vh;
+}
+
+.skyrim-bottom {
+    display: flex;
+    min-height: 50vh;
+}
+
+.skyrim-image {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+  
+.skyrim-body {
+    width: 30%;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 100);
+    min-height: 300px;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+  
+.skyrim-header {
+    color: white;
+    font-size: 25px;
+}
+
+.skyrim-paragraph-font-size {
+    font-size: 20px;
+    padding: 30px;
+    text-align: left;
+    line-height: 2;
+}

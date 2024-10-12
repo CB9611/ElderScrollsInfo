@@ -1,22 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import siteLogo from '../Images/Ouroboros.png';
 
 function Navbar() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsOpen(true);
+    }
+
+    const handleMouseLeave = () => {
+        setIsOpen(false);
+    }
+
     return (
         <div className="nav-container">
             <div className="navbar">
                 <div className="left-nav-items">
-                    <div className="nav-items">
+                    <div className="">
                         <Link className="links" to="/">
                             <div className="nav-link">Home</div>
                         </Link>
                     </div>
-                    <div className="nav-items">
-                        <Link className="links" to="/Games">
-                            <div className="nav-link">Games</div>
-                        </Link>
+                    <div 
+                        className="games-dropdown-container"
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <div className={isOpen ? "games-dropdown-open" : "games-dropdown-closed"}>
+                            {isOpen ? '▲' : 'Games ▼'}
+                        </div>
+                        {isOpen && /* DROPDOWN MENU START */ (
+                            <div className="games-dropdown-list">
+                                <Link className="links" to="/Arena">
+                                    <div className="nav-link">Arena</div>
+                                </Link>
+                                <Link className="links" to="/Daggerfall">
+                                    <div className="nav-link">Daggerfall</div>
+                                </Link>
+                                <Link className="links" to="/Morrowind">
+                                    <div className="nav-link">Morrowind</div>
+                                </Link>
+                                <Link className="links" to="/Oblivion">
+                                    <div className="nav-link">Oblivion</div>
+                                </Link>
+                                <Link className="links" to="/Skyrim">
+                                    <div className="nav-link">Skyrim</div>
+                                </Link>
+                                <Link className="links" to="/ElderScrollsOnline">
+                                    <div className="nav-link">Elder Scrolls Online</div>
+                                </Link>
+                                <div className="dropdown-divider" />
+                                <Link className="links" to="/Games">
+                                    <div className="nav-link">All Games</div>
+                                </Link>
+                            </div>
+                        ) /* DROPDOWN MENU END */ }
                     </div>
                 </div>
                 <div className="navbarLogo">

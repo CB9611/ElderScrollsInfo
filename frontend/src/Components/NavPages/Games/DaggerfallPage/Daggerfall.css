@@ -1,0 +1,49 @@
+.daggerfall-container {
+    height: auto;
+    width: 100vw;
+}
+
+.daggerfall-top {
+    display: flex;
+    min-height: 50vh;
+}
+
+.daggerfall-mid {
+    display: flex;
+    min-height: 50vh;
+}
+
+.daggerfall-bottom {
+    display: flex;
+    min-height: 50vh;
+}
+
+.daggerfall-image {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+  
+.daggerfall-body {
+    max-width: 30%;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 100);
+    min-height: 300px;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+  
+.daggerfall-header {
+    color: white;
+    font-size: 25px;
+}
+
+.daggerfall-paragraph-font-size {
+    font-size: 20px;
+    padding: 30px;
+    text-align: left;
+    line-height: 2;
+}

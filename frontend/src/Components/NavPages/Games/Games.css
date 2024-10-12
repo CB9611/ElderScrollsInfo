@@ -1,12 +1,12 @@
 .games-container {
     height: auto;
     width: 100%;
-    margin-top: 10vh;
     margin-bottom: 10vh;
 }
 
 .games-arena {
     display: flex;
+    margin-top: 10vh;
     margin-right: 20%;
     margin-left: 20%;
 }
@@ -30,6 +30,12 @@
 }
 
 .games-skyrim {
+    display: flex;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.games-eso {
     display: flex;
     margin-right: 20%;
     margin-left: 20%;
