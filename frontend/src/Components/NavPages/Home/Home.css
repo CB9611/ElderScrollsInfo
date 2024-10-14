@@ -13,5 +13,6 @@
 }
 
 .home-title-image {
-    width: 80vw;
+    width: 100vw;
+    max-width: 1000px;
 }

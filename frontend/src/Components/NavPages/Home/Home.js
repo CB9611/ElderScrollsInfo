@@ -1,5 +1,5 @@
 import './Home.css';
-import titleImg from '../../Images/elderscrolls_title.png';
+import titleImg from '../../Images/es_title.png';
 
 function Home() {
   return (
