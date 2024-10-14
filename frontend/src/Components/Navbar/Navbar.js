@@ -50,7 +50,7 @@ function Navbar() {
                                     <div className="nav-link">Skyrim</div>
                                 </Link>
                                 <Link className="links" to="/ElderScrollsOnline">
-                                    <div className="nav-link">Elder Scrolls Online</div>
+                                    <div className="nav-link">Online</div>
                                 </Link>
                                 <div className="dropdown-divider" />
                                 <Link className="links" to="/Games">

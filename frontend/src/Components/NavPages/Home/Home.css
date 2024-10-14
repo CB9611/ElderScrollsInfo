@@ -1,4 +1,17 @@
 .home-container {
-    height: auto;
+    min-height: 80vh;
     width: 100vw;
+    background-image: url('../../Images/Skyrim/skyrim2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    display: flex;
+}
+
+.home-title-image {
+    width: 80vw;
 }
