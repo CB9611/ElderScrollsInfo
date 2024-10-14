@@ -1,18 +1,64 @@
 .home-container {
     min-height: 80vh;
     width: 100vw;
+}
+
+.landingpage-separator {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.home-title {
     background-image: url('../../Images/Skyrim/skyrim2.jpg');
+    min-height: 80vh;
+    width: 100vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     padding: auto;
+    flex-direction: column;
     display: flex;
 }
 
 .home-title-image {
     width: 100vw;
     max-width: 1000px;
+}
+
+.home-signup-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: none;
+    height: 40px;
+    background-color: grey;
+    width: 150px;
+    border-radius: 50px;
+    margin: 0;
+    color: whitesmoke;
+}
+
+.home-signup-button:hover {
+    cursor: pointer;
+    background-color: rgb(100, 100, 100);
+}
+
+.signup-open {
+    height: 300px;
+    transition: 1s ease;
+    background-color: whitesmoke;
+    border-top: #202020 solid 5px;
+}
+
+.signup-close {
+    height: 0px;
+    transition: 1s ease;
+    background-color: whitesmoke;
 }
