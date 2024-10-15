@@ -1,3 +1,5 @@
+/* @media (min-width: 720px) { */
+
 .home-container {
     min-height: 80vh;
     width: 100vw;
@@ -15,20 +17,18 @@
 .home-title {
     background-image: url('../../Images/Skyrim/skyrim2.jpg');
     min-height: 80vh;
-    width: 100vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    padding: auto;
     flex-direction: column;
     display: flex;
 }
 
 .home-title-image {
-    width: 100vw;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1280px;
 }
 
 .home-signup-button {
@@ -62,3 +62,5 @@
     transition: 1s ease;
     background-color: whitesmoke;
 }
+
+/* } */

@@ -1,78 +1,204 @@
-.games-container {
-    height: auto;
-    width: 100%;
-    margin-bottom: 10vh;
-}
+/* @media (min-width: 1280px) { */
 
-.games-arena {
-    display: flex;
-    margin-top: 10vh;
-    margin-right: 20%;
-    margin-left: 20%;
-}
+    /* Global Styles */
 
-.games-daggerfall {
-    display: flex;
-    margin-right: 20%;
-    margin-left: 20%;
-}
+    .es-container {
+        height: auto;
+        width: 100vw;
+    }
 
-.games-morrowind {
-    display: flex;
-    margin-right: 20%;
-    margin-left: 20%;
-}
+    .es-separator {
+        display: flex;
+        min-height: 50vh;
+    }
 
-.games-oblivion {
-    display: flex;
-    margin-right: 20%;
-    margin-left: 20%;
-}
+    .es-header, .games-header /* Games.js & {insertGame}.js*/ {
+        color: whitesmoke;
+        font-size: 25px;
+    }
 
-.games-skyrim {
-    display: flex;
-    margin-right: 20%;
-    margin-left: 20%;
-}
+    .es-font-size {
+        font-size: 20px;
+        padding: 30px;
+        text-align: left;
+        line-height: 2;
+    }
 
-.games-eso {
-    display: flex;
-    margin-right: 20%;
-    margin-left: 20%;
-}
+    /* Games.js */
 
-.games-image {
-    max-width: 40%;
-    min-width: 20%;
-    height: auto;
-    object-fit: cover;
+    .games-container {
+        height: auto;
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+
+    .games-arena {
+        display: flex;
+        margin-top: 10vh;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1280px;
+    }
+
+    .games-daggerfall, .games-morrowind, .games-oblivion, .games-skyrim, .games-eso {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1280px;
+    }
+
+    .games-image {
+        max-width: 40%;
+        min-width: 20%;
+        height: auto;
+        object-fit: cover;
+        
+        height: 50%;
+    }
     
-    height: 50%;
-}
-  
-.games-body {
-    max-width: 80%;
-    min-width: 60%;
-    justify-content: center;
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 100);
-    min-height: auto;
-    width: auto;
-    box-sizing: border-box;
-    padding: 20px;
-}
+    .games-body {
+        max-width: 80%;
+        min-width: 60%;
+        justify-content: center;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 100);
+        min-height: auto;
+        width: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
 
-.games-header {
-    color: whitesmoke;
-    font-size: 25px;
-}
+    .games-divider {
+        background-color: #202020;
+        height: 5px;
+        width: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1280px;
+    }
 
-.games-divider {
-    background-color: #202020;
-    height: 5px;
-    width: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 20%;
-    margin-left: 20%;
-}
+    /********** Individual Game Pages **********/
+
+    /* Arena */
+
+    .arena-image {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .arena-body {
+        max-width: 40%;
+        justify-content: center;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 100);
+        min-height: 300px;
+        height: auto;
+        width: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    /* Daggerfall */
+
+    .daggerfall-image {
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .daggerfall-body {
+        max-width: 30%;
+        justify-content: center;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 100);
+        min-height: 300px;
+        height: auto;
+        width: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    /* ESO */
+
+    .eso-image {
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .eso-body {
+        width: 30%;
+        justify-content: center;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 100);
+        min-height: 300px;
+        height: auto;
+        width: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    /* Morrowind */
+
+    .morrowind-image {
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .morrowind-body {
+        width: 30%;
+        justify-content: center;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 100);
+        min-height: 300px;
+        height: auto;
+        width: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    /* Oblivion */
+
+    .oblivion-image {
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .oblivion-body {
+        width: 30%;
+        justify-content: center;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 100);
+        min-height: 300px;
+        height: auto;
+        width: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    /* Skyrim */
+
+    .skyrim-image {
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .skyrim-body {
+        width: 30%;
+        justify-content: center;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 100);
+        min-height: 300px;
+        height: auto;
+        width: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+/* } */

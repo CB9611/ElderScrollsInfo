@@ -1,20 +1,24 @@
-.app-body {
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  min-height: 75vh;
-  height: auto;
-  max-width: 100%;
-  font-size: 50px;
-}
+@media (min-width: 720px) {
 
-.banner-container {
-  position: sticky;
-  top: 0;
-  width: 100%;
+  .app-body {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    min-height: 75vh;
+    height: auto;
+    max-width: 100%;
+    font-size: 50px;
+  }
+  
+  .banner-container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
 }

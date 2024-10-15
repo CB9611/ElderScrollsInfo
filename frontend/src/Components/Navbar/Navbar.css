@@ -1,141 +1,289 @@
-.nav-container {
-    background: linear-gradient(to top, black, #202020);
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    border-bottom: solid #202020 5px;
+@media (min-width: 720px) {
+
+    .nav-container {
+        background: linear-gradient(to top, black, #202020);
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid #202020 5px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .siteLogo {
+        text-align: left;
+        text-decoration: none;
+        list-style-type: none;
+        float: left;
+        height: auto;
+        max-height: 50px;
+    }
+
+    .navbarLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .siteLogo-Link {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .siteLogo-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-height: 50px;
+    }
+    
+    .left-nav-items {
+        display: flex;
+        float: right;
+        height: 50px;
+        margin: 0;
+    }
+
+    .right-nav-items {
+        display: flex;
+        float: left;
+        height: 50px;
+        margin: 0;
+    }
+
+    .links {
+        margin: auto;
+        padding: auto;
+        text-decoration: none;
+    }
+
+    .nav-link {
+        width: auto;
+        min-width: 12vw;
+        height: auto;
+        min-height: 50px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-link:hover {
+        background-color: rgb(100, 100, 100);
+        transition: 0.5s;
+        cursor: pointer;
+        color: black;
+    }
+
+    .games-dropdown-open {
+        width: auto;
+        min-width: 12vw;
+        height: auto;
+        min-height: 50px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: linear-gradient(to top, #646464, #646464);
+        border-style: none;
+    }
+
+    .games-dropdown-closed {
+        width: auto;
+        min-width: 12vw;
+        height: auto;
+        min-height: 50px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: linear-gradient(to top, black, #202020);
+        border-style: none;
+    }
+
+    .games-dropdown-open:hover {
+        background: linear-gradient(to top, #646464, #646464);
+        transition: 0.5s;
+        cursor: pointer;
+        color: black;
+    }
+
+    .games-dropdown-list {
+        margin-top: 0px;
+        padding: 0px;
+        background-color: grey;
+    }
+
+    .games-dropdown-container {
+        min-width: 12vw;
+    }
+
+    .dropdown-divider {
+        background-color: #202020;
+        height: 3px;
+        width: auto;
+    }
+
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-}
+@media (max-width: 720px) {
+    .nav-container {
+        background: linear-gradient(to top, black, #202020);
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid #202020 5px;
+    }
 
-.siteLogo {
-    text-align: left;
-    text-decoration: none;
-    list-style-type: none;
-    float: left;
-    height: auto;
-    max-height: 50px;
-}
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
 
-.navbarLogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    margin-right: 30px;
-    margin-left: 30px;
-}
+    .siteLogo {
+        text-align: left;
+        text-decoration: none;
+        list-style-type: none;
+        float: left;
+        height: auto;
+        max-height: 50px;
+    }
 
-.siteLogo-Link {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    .navbarLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
 
-.siteLogo-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-height: 50px;
-}
-  
-.left-nav-items {
-    display: flex;
-    float: right;
-    height: 50px;
-    margin: 0;
-}
+    .siteLogo-Link {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-.right-nav-items {
-    display: flex;
-    float: left;
-    height: 50px;
-    margin: 0;
-}
+    .siteLogo-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-height: 50px;
+    }
+    
+    .left-nav-items {
+        display: flex;
+        float: right;
+        height: 50px;
+        margin: 0;
+    }
 
-.links {
-    margin: auto;
-    padding: auto;
-    text-decoration: none;
-}
+    .right-nav-items {
+        display: flex;
+        float: left;
+        height: 50px;
+        margin: 0;
+    }
 
-.nav-link {
-    width: auto;
-    min-width: 12vw;
-    height: auto;
-    min-height: 50px;
-    color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .links {
+        margin: auto;
+        padding: auto;
+        text-decoration: none;
+    }
 
-.nav-link:hover {
-    background-color: rgb(100, 100, 100);
-    transition: 0.5s;
-    cursor: pointer;
-    color: black;
-}
+    .nav-link {
+        width: auto;
+        min-width: 12vw;
+        height: auto;
+        min-height: 50px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.games-dropdown-open {
-    width: auto;
-    min-width: 12vw;
-    height: auto;
-    min-height: 50px;
-    color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    background: linear-gradient(to top, #646464, #646464);
-    border-style: none;
-}
+    .nav-link:hover {
+        background-color: rgb(100, 100, 100);
+        transition: 0.5s;
+        cursor: pointer;
+        color: black;
+    }
 
-.games-dropdown-closed {
-    width: auto;
-    min-width: 12vw;
-    height: auto;
-    min-height: 50px;
-    color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    background: linear-gradient(to top, black, #202020);
-    border-style: none;
-}
+    .games-dropdown-open {
+        width: auto;
+        min-width: 12vw;
+        height: auto;
+        min-height: 50px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: linear-gradient(to top, #646464, #646464);
+        border-style: none;
+    }
 
-.games-dropdown-open:hover {
-    background: linear-gradient(to top, #646464, #646464);
-    transition: 0.5s;
-    cursor: pointer;
-    color: black;
-}
+    .games-dropdown-closed {
+        width: auto;
+        min-width: 12vw;
+        height: auto;
+        min-height: 50px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: linear-gradient(to top, black, #202020);
+        border-style: none;
+    }
 
-.games-dropdown-list {
-    margin-top: 0px;
-    padding: 0px;
-    background-color: grey;
-}
+    .games-dropdown-open:hover {
+        background: linear-gradient(to top, #646464, #646464);
+        transition: 0.5s;
+        cursor: pointer;
+        color: black;
+    }
 
-.games-dropdown-container {
-    min-width: 12vw;
-}
+    .games-dropdown-list {
+        margin-top: 0px;
+        padding: 0px;
+        background-color: grey;
+    }
 
-.dropdown-divider {
-    background-color: #202020;
-    height: 3px;
-    width: auto;
+    .games-dropdown-container {
+        min-width: 12vw;
+    }
+
+    .dropdown-divider {
+        background-color: #202020;
+        height: 3px;
+        width: auto;
+    }
 }
