@@ -1,6 +1,4 @@
-@media (min-width: 720px) {
-
-  .app-body {
+.app-body {
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -13,12 +11,10 @@
     height: auto;
     max-width: 100%;
     font-size: 50px;
-  }
+}
   
-  .banner-container {
-    position: sticky;
-    top: 0;
-    width: 100%;
-  }
-
+.banner-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
