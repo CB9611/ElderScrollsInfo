@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import siteLogo from '../Images/Ouroboros.png';
@@ -7,18 +7,33 @@ function Navbar() {
 
     /* Dropdown */
     const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef(null);
     const handleClick = () => { setIsOpen(!isOpen); }
+
+    /* v v v Closes dropdown when clicking elsewhere v v v */
+    const handClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setIsOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handClickOutside);
+        };
+    }, []);
+    /* ^ ^ ^ Closes dropdown when clicking elsewhere ^ ^ ^ */
 
     return (
         <div className="nav-container">
             <div className="navbar">
                 <Link className="nav-link" to="/" onClick={() => setIsOpen(false)}>Home</Link>
-                <div onClick={handleClick}>
-                    <div className={isOpen ? "games-dropdown-open" : "games-dropdown-closed"}>
+                <div className="nav-dropdown-container" ref={dropdownRef}>
+                    <button className={isOpen ? "games-dropdown-open" : "games-dropdown-closed"} onClick={handleClick}>
                         {isOpen ? '▲' : 'Games ▼'}
-                    </div>
+                    </button>
                     <div className={`games-dropdown-list ${isOpen ? "open" : ""}`}>
-                        <div className="dropdown-divider" />
                         <Link className="nav-link" to="/Arena">Arena</Link>
                         <Link className="nav-link" to="/Daggerfall">Daggerfall</Link>
                         <Link className="nav-link" to="/Morrowind">Morrowind</Link>

@@ -1,3 +1,7 @@
+:root {
+    --box-width: 25vw;
+}
+
 .nav-container {
     background: linear-gradient(to top, black, #202020);
     width: 100%;
@@ -8,15 +12,7 @@
 
 .navbar {
     display: flex;
-}
-
-.nav-link {
-    text-decoration: none;
-    min-width: 12vw;
-    min-height: 50px;
-    color: whitesmoke;
-    display: flex;
-    align-items: center;
+    width: 100%;
     justify-content: center;
 }
 
@@ -32,29 +28,28 @@
     margin-left: 15px;
 }
 
-.games-dropdown-open {
-    min-width: 12vw;
+.nav-link, .nav-dropdown-container, .games-dropdown-open, .games-dropdown-closed {
+    flex: 1;
+    text-decoration: none;
+    width: var(--box-width);
+    max-width: 250px;
     min-height: 50px;
     color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
 }
 
-.games-dropdown-closed {
-    min-width: 12vw;
-    min-height: 50px;
-    color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav-dropdown-container button {
+    border-style: none;
+    background-color: inherit;
 }
 
 .games-dropdown-list {
     max-height: 0;
     overflow: hidden;
-    width: 12vw;
+    width: var(--box-width);
+    max-width: 250px;
     background-color: grey;
     position: absolute;
     top: 100%;
@@ -72,9 +67,58 @@
     width: auto;
 }
 
-.nav-link:hover, .games-dropdown-open:hover, .games-dropdown-open:hover, .games-dropdown-closed:hover {
+.nav-link:hover, .games-dropdown-open:hover, .games-dropdown-closed:hover {
     background-color: #646464;
     transition: 0.5s;
     cursor: pointer;
     color: black;
+}
+
+
+
+@media (max-width: 720px) { /* Responsive navbar*/
+
+    /* Removes navbar logo */
+    .nav-logo-link {
+        display: none;
+    }
+    .nav-logo {
+        display: none;
+    }
+
+    /* Sets values for all navbar components */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-link, .nav-dropdown-container, .games-dropdown-open, .games-dropdown-closed {
+        text-decoration: none;
+        width: 100vw;
+        max-width: 100%;
+        min-height: 50px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-dropdown-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .games-dropdown-list {
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        width: 100vw;
+        background-color: grey;
+        transition: max-height 0.5s ease-out;
+    }
 }

@@ -18,3 +18,9 @@
   top: 0;
   width: 100%;
 }
+
+@media (max-width: 720px) {
+  .banner-container {
+    position: relative;
+  }
+}
