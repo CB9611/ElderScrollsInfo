@@ -12,7 +12,7 @@ function Navbar() {
     return (
         <div className="nav-container">
             <div className="navbar">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/" onClick={() => setIsOpen(false)}>Home</Link>
                 <div onClick={handleClick}>
                     <div className={isOpen ? "games-dropdown-open" : "games-dropdown-closed"}>
                         {isOpen ? '▲' : 'Games ▼'}
@@ -29,8 +29,14 @@ function Navbar() {
                         <Link className="nav-link" to="/Games">All Games</Link>
                     </div>
                 </div>
-                <Link className="nav-link" to="/About">About</Link>
-                <Link className="nav-link" to="https://bethesda.net/" target="_blank" rel="noopener noreferrer">Bethesda</Link>
+                <Link className="nav-link" to="/About" onClick={() => setIsOpen(false)}>About</Link>
+                <Link 
+                    className="nav-link" 
+                    to="https://bethesda.net/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    onClick={() => setIsOpen(false)}
+                >Bethesda</Link>
             </div>
         </div>
     )
