@@ -20,6 +20,18 @@
     justify-content: center;
 }
 
+.nav-logo-link {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.nav-logo {
+    max-height: 45px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
 .games-dropdown-open {
     min-width: 12vw;
     min-height: 50px;

@@ -29,6 +29,13 @@ function Navbar() {
                         <Link className="nav-link" to="/Games">All Games</Link>
                     </div>
                 </div>
+                <Link 
+                    className="nav-logo-link"
+                    to="/" 
+                    title="Return home Dovahkiin"
+                    onClick={() => setIsOpen(false)}>
+                    <img className="nav-logo" src={ siteLogo } alt="" />
+                </Link>
                 <Link className="nav-link" to="/About" onClick={() => setIsOpen(false)}>About</Link>
                 <Link 
                     className="nav-link" 
