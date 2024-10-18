@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import siteLogo from '../Images/Ouroboros.png';
 
 function Navbar() {
 
@@ -11,55 +10,54 @@ function Navbar() {
     const handleClick = () => { setIsOpen(!isOpen); }
 
     /* v v v Closes dropdown when clicking elsewhere v v v */
-    const handClickOutside = (event) => {
+    const handleClickOutside = (event) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
             setIsOpen(false);
         }
     };
 
     useEffect(() => {
-        document.addEventListener('mousedown', handClickOutside);
+        document.addEventListener('mousedown', handleClickOutside);
         return () => {
-            document.removeEventListener('mousedown', handClickOutside);
+            document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
     /* ^ ^ ^ Closes dropdown when clicking elsewhere ^ ^ ^ */
 
     return (
         <div className="nav-container">
-            <div className="navbar">
-                <Link className="nav-link" to="/" onClick={() => setIsOpen(false)}>Home</Link>
-                <div className="nav-dropdown-container" ref={dropdownRef}>
-                    <button className={isOpen ? "games-dropdown-open" : "games-dropdown-closed"} onClick={handleClick}>
+            <nav className="navbar">
+                <Link className="nav-link" to="/">Home</Link>
+                <div className={`nav-dropdown-container ${isOpen ? "open" : ""}`} ref={dropdownRef}>
+                    <button 
+                        className={isOpen ? "games-dropdown-open" : "games-dropdown-closed"} 
+                        onClick={handleClick}
+                        aria-expanded={isOpen}
+                        aria-controls="games-dropdown-list"
+                    >
                         {isOpen ? '▲' : 'Games ▼'}
                     </button>
-                    <div className={`games-dropdown-list ${isOpen ? "open" : ""}`}>
-                        <Link className="nav-link" to="/Arena">Arena</Link>
-                        <Link className="nav-link" to="/Daggerfall">Daggerfall</Link>
-                        <Link className="nav-link" to="/Morrowind">Morrowind</Link>
-                        <Link className="nav-link" to="/Oblivion">Oblivion</Link>
-                        <Link className="nav-link" to="/Skyrim">Skyrim</Link>
-                        <Link className="nav-link" to="/ElderScrollsOnline">Online</Link>
-                        <div className="dropdown-divider" />
-                        <Link className="nav-link" to="/Games">All Games</Link>
-                    </div>
+                    {isOpen && (
+                        <ul className="games-dropdown-list" id="games-dropdown-list">
+                            <Link className="nav-link" to="/Arena">Arena</Link>
+                            <Link className="nav-link" to="/Daggerfall">Daggerfall</Link>
+                            <Link className="nav-link" to="/Morrowind">Morrowind</Link>
+                            <Link className="nav-link" to="/Oblivion">Oblivion</Link>
+                            <Link className="nav-link" to="/Skyrim">Skyrim</Link>
+                            <Link className="nav-link" to="/ElderScrollsOnline">Online</Link>
+                            <div className="dropdown-divider" />
+                            <Link className="nav-link" to="/Games">All Games</Link>
+                        </ul>
+                    )}
                 </div>
-                <Link 
-                    className="nav-logo-link"
-                    to="/" 
-                    title="Return home Dovahkiin"
-                    onClick={() => setIsOpen(false)}>
-                    <img className="nav-logo" src={ siteLogo } alt="" />
-                </Link>
-                <Link className="nav-link" to="/About" onClick={() => setIsOpen(false)}>About</Link>
-                <Link 
+                <Link className="nav-link" to="/About">About</Link>
+                <Link
                     className="nav-link" 
                     to="https://bethesda.net/" 
                     target="_blank" 
-                    rel="noopener noreferrer" 
-                    onClick={() => setIsOpen(false)}
+                    rel=" noreferrer noopener"
                 >Bethesda</Link>
-            </div>
+            </nav>
         </div>
     )
 }
